@@ -75,21 +75,28 @@ class ViewController: UIViewController {
         playSound()
         if currentOperation != Operation.Empty {
             //It's already the second operator, so when the second operator is pressed, we need to immediately calculate
-            if currentOperation == Operation.Multiply{
-                result = "\((Double(leftVarStr)!) * Double(rightVarStr)!)"
-            }
-            else if currentOperation == Operation.Divide {
-                result = "\((Double(leftVarStr)!) / Double(rightVarStr)!)"
-            }
-            else if currentOperation == Operation.Add {
-                result = "\((Double(leftVarStr)!) + Double(rightVarStr)!)"
-            }
-            else if currentOperation == Operation.Minus {
-                result = "\((Double(leftVarStr)!) - Double(rightVarStr)!)"
-            }
             
-            leftVarStr = result
-            outputLbl.text = result
+            if runningNumber != "" {
+            
+                rightVarStr = runningNumber
+                runningNumber = ""
+            
+                if currentOperation == Operation.Multiply{
+                    result = "\(Double(leftVarStr)! * Double(rightVarStr)!)"
+                }
+                else if currentOperation == Operation.Divide {
+                    result = "\(Double(leftVarStr)! / Double(rightVarStr)!)"
+                }
+                else if currentOperation == Operation.Add {
+                    result = "\(Double(leftVarStr)! + Double(rightVarStr)!)"
+                }
+                else if currentOperation == Operation.Minus {
+                    result = "\(Double(leftVarStr)! - Double(rightVarStr)!)"
+                }
+                
+                leftVarStr = result
+                outputLbl.text = result
+            }
             
             currentOperation = op
             

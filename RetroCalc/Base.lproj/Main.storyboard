@@ -192,7 +192,7 @@
                                                     <action selector="dividePressedWithBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xb0-r2-FTa"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-NF-cd3" userLabel="MultiplyB">
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-NF-cd3" userLabel="MultiplyB">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="2In-yd-x6D"/>
